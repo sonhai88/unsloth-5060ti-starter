@@ -1,0 +1,6 @@
+# Ép .bat dùng CRLF để chạy đúng trên Windows (file gốc tạo trên Mac = LF)
+*.bat text eol=crlf
+*.cmd text eol=crlf
+# .ps1 chạy tốt với LF, giữ nguyên
+*.ps1 text eol=lf
+*.py  text eol=lf

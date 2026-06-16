@@ -5,7 +5,7 @@ Copy repo này về máy → làm theo README → train model riêng → xuất 
 
 > ### ⚡ Cài 1 LỆNH (chạy ở máy nhà — PowerShell)
 > ```powershell
-> irm https://raw.githubusercontent.com/sonhai88/unsloth-5060ti-starter/main/bootstrap.ps1 | iex
+> [Net.ServicePointManager]::SecurityProtocol='Tls12'; irm https://raw.githubusercontent.com/sonhai88/unsloth-5060ti-starter/main/bootstrap.ps1 | iex
 > ```
 > Tự clone repo → tự cài Unsloth Studio → xong. Sau đó bấm icon **"Unsloth Studio"** trên Desktop.
 >

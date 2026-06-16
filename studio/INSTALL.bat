@@ -7,7 +7,7 @@ REM ============================================================
 echo.
 echo   Dang cai Unsloth Studio... (lan dau tai vai GB, kien nhan)
 echo.
-powershell -NoProfile -ExecutionPolicy Bypass -Command "irm https://unsloth.ai/install.ps1 | iex"
+powershell -NoProfile -ExecutionPolicy Bypass -Command "[Net.ServicePointManager]::SecurityProtocol=[Net.SecurityProtocolType]::Tls12; irm https://unsloth.ai/install.ps1 | iex"
 echo.
 echo   ============================================================
 echo   Xong! Tim icon "Unsloth Studio" tren Desktop -> double-click.

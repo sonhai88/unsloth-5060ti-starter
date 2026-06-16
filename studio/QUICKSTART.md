@@ -16,7 +16,8 @@ App có sẵn của Unsloth: chọn data → bấm Train → xuất model. Khôn
 - Lần đầu nó tải PyTorch + CUDA + Unsloth (~vài GB) — để yên cho chạy, đừng tắt.
 - Xong → có **icon "Unsloth Studio" trên Desktop**.
 
-> Không thích .bat? Mở **PowerShell** gõ 1 dòng: `irm https://unsloth.ai/install.ps1 | iex`
+> Không thích .bat? Mở **PowerShell** gõ 1 dòng:
+> `[Net.ServicePointManager]::SecurityProtocol='Tls12'; irm https://unsloth.ai/install.ps1 | iex`
 
 ---
 
