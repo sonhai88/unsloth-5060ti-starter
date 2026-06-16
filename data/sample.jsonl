@@ -1,0 +1,12 @@
+{"instruction": "Giải thích closure trong JavaScript", "output": "Closure = hàm nhớ được biến ở scope nơi nó sinh ra, kể cả khi scope đó đã chạy xong. Ví dụ: hàm trả về hàm, hàm con vẫn đọc được biến của hàm cha. Dùng để giữ state riêng tư. Hết."}
+{"instruction": "float hay Decimal cho tiền?", "output": "Decimal. Float làm tròn nhị phân sai số, cộng tiền lâu ngày lệch. Tiền là phải chính xác tuyệt đối — luôn Decimal."}
+{"instruction": "Khi nào nên dùng index trong database?", "output": "Index khi cột hay nằm trong WHERE/JOIN/ORDER BY và bảng đủ lớn. Đừng index bừa: mỗi index làm INSERT/UPDATE chậm đi. Đo trước, đừng đoán."}
+{"instruction": "Tóm tắt nguyên tắc đặt tên biến", "output": "Tên nói rõ NÓ LÀ GÌ, không phải nó là kiểu gì. `users` tốt hơn `arr`. `isActive` tốt hơn `flag`. Tên rõ = tài liệu tốt nhất, khỏi comment."}
+{"instruction": "Có nên refactor code đang chạy tốt không?", "output": "Không, trừ khi anh sắp đụng vào nó. Refactor code không liên quan = thêm rủi ro không lý do. Code xấu mà ổn định > code đẹp mà mới toanh chưa ai test."}
+{"instruction": "REST hay GraphQL?", "output": "REST cho API đơn giản, ít client, cache dễ. GraphQL khi client cần lấy data linh hoạt, tránh over-fetch, nhiều màn hình khác nhau. Đừng dùng GraphQL chỉ vì nghe sang."}
+{"instruction": "Mock nhiều trong test có sao không?", "output": "Có. Mock quá nhiều = test cái mock chứ không test code thật. Test behavior, đừng test implementation. Mock biên ngoài (network, DB), giữ logic thật."}
+{"instruction": "Cách debug nhanh một bug lạ", "output": "Đọc error message TRƯỚC. 80% bug nằm ngay trong dòng error mà người ta lướt qua. Đọc kỹ stack trace, tìm dòng code MÌNH viết gần nhất, rồi mới đoán."}
+{"instruction": "Premature optimization là gì và tại sao xấu?", "output": "Tối ưu khi chưa chứng minh có vấn đề. Xấu vì làm code phức tạp, khó đọc, để giải quyết bottleneck tưởng tượng. Đo trước (profile), thấy chậm thật rồi mới tối ưu."}
+{"instruction": "Khi nào tách một hàm thành nhiều hàm nhỏ?", "output": "Khi hàm làm >1 việc, hoặc anh phải scroll để đọc hết, hoặc cần comment giải thích một đoạn — đoạn đó nên thành hàm có tên. Một hàm = một việc."}
+{"instruction": "Dead code thì comment lại hay xoá?", "output": "Xoá. Git nhớ hết rồi, cần thì lôi lại. Code comment lại = rác, làm người đọc phân tâm 'cái này còn dùng không?'. Xoá cho sạch."}
+{"instruction": "Done is better than perfect đúng không?", "output": "Đúng, nhưng done KHÔNG có nghĩa là buggy. Ship sớm > hoàn hảo muộn, miễn là nó chạy đúng cái nó hứa. 'Xong' mà vỡ thì chưa xong."}

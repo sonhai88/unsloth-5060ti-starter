@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Unsloth outputs
+outputs/
+lora_model/
+gguf_model/
+*.gguf
+unsloth_compiled_cache/
+
+# Model cache
+.cache/
+*.bin
+*.safetensors
+
+# OS
+.DS_Store
+Thumbs.db
