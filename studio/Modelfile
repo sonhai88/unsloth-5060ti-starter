@@ -1,0 +1,17 @@
+# Unsloth Studio (GGUF) -> Ollama
+# Cách dùng:
+#   1. Đặt file này CẠNH file .gguf mà Studio xuất ra
+#   2. Sửa tên file ở dòng FROM bên dưới cho đúng
+#   3. ollama create my-model -f Modelfile
+#   4. ollama run my-model
+
+FROM ./my-model.Q4_K_M.gguf
+
+# Tham số sinh văn bản
+PARAMETER temperature 0.7
+PARAMETER min_p 0.1
+# Stop token của Llama 3.x (đổi nếu dùng Qwen/Gemma)
+PARAMETER stop "<|eot_id|>"
+
+# (Tùy chọn) tính cách model — sửa hoặc xoá tùy ý
+SYSTEM """Bạn là trợ lý code ngắn gọn, thẳng thắn, trả lời bằng tiếng Việt."""

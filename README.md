@@ -3,6 +3,10 @@
 Bộ khởi động để fine-tune model open-source **ngay trên máy nhà** (Windows + RTX 5060 Ti 8GB, kiến trúc Blackwell).
 Copy repo này về máy → làm theo README → train model riêng → xuất ra Ollama/llama.cpp.
 
+> ### 👉 Muốn "app double-click là chạy"? → đọc [`studio/QUICKSTART.md`](./studio/QUICKSTART.md)
+> Đó là cách nhanh nhất: cài 1 lần bằng `studio/INSTALL.bat`, sau đó bấm icon trên Desktop là xong.
+> Phần dưới đây dành cho ai muốn kiểm soát bằng **code/script**.
+
 > **TL;DR:** 8GB VRAM + Unsloth QLoRA = train ngon model **3B**, gắng được **8B** (sát trần).
 > Đừng mơ 13B trở lên. Context dài là thứ ăn VRAM, không phải số tham số.
 
